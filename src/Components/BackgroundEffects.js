@@ -19,7 +19,7 @@ export function BackgroundEffects() {
     window.addEventListener('resize', setCanvasSize);
 
     // Matrix-like rain effect
-    const chars = "0123456789ABCDEF";
+    const chars = "0123456{}</>789ABCDEF";
     const charArray = chars.split('');
     const fontSize = 14;
     const columns = canvas.width / fontSize;
