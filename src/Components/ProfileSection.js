@@ -70,7 +70,7 @@ export function ProfileSection() {
             <ChevronDown className="w-8 h-8 animate-bounce" />
           </button>
         </div>
-        <motion.div className="w-full flex justify-center mt-8">
+        <motion.div className="w-full flex justify-center mt-4">
           <Lottie options={defaultOptions} height={400} width={400} />
         </motion.div>
       </div>
