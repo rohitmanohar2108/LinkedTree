@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import { ProfileSection } from "./Components/ProfileSection";
+import { LinkSection } from "./Components/LinkSection";
+import { BackgroundEffects } from "./Components/BackgroundEffects";
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen split-bg-gradient text-white overflow-hidden">
+      <BackgroundEffects />
+
+      <div className="relative min-h-screen flex flex-col lg:flex-row">
+        <div className="lg:w-5/12 relative z-10 p-8 lg:p-12 flex items-center">
+          <ProfileSection />
+        </div>
+
+        <div className="lg:w-7/12 relative z-10 p-8 lg:p-12 flex items-center">
+          <LinkSection />
+        </div>
+      </div>
     </div>
   );
 }

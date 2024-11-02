@@ -1,13 +1,202 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  ::selection {
+    @apply bg-violet-500/30 text-current;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-black/30 border border-white/10;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+  }
+
+  .split-bg-gradient {
+    background: linear-gradient(
+      110deg,
+      #0f172a 50%,
+      #1e1b4b 50.1%
+    );
+  }
+
+  .animated-border {
+    background: linear-gradient(
+      90deg,
+      theme('colors.violet.500'),
+      theme('colors.fuchsia.500'),
+      theme('colors.violet.500')
+    );
+    background-size: 200% 100%;
+    animation: gradient 6s linear infinite;
+  }
 }
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+
+.animated-border-box {
+    position: relative;
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height equal to width for circular shape */
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    background-size: 300% 300%;
+    animation: border-animation 12s ease infinite;
+    border-radius: 50%; /* This makes it circular */
+    padding: 3px;
+    overflow: hidden; /* Ensure inner content doesn't overflow */
+  }
+  
+  .animated-border-box > div {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%; /* Ensure inner div is also circular */
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  @keyframes border-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient-x {
+    animation: gradient-x 10s ease infinite;
+    background-size: 200% 200%;
+  }
+  
+
+
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes scan {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 100%;
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+
+
+  @layer base {
+    body {
+      @apply antialiased;
+    }
+  
+    ::selection {
+      @apply bg-purple-500/30 text-current;
+    }
+  }
+  
+  @layer utilities {
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
