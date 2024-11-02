@@ -12,6 +12,7 @@ interface LinkCardProps {
 export function LinkCard({ title, description, url, icon, delay }: LinkCardProps) {
   return (
     <a
+      id="cards"
       href={url}
       target="_blank"
       rel="noopener noreferrer"
