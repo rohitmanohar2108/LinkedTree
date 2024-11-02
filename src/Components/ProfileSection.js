@@ -35,7 +35,7 @@ export function ProfileSection() {
       <div className="text-center z-20 mt-8">
         <div className="inline-flex items-center space-x-2 mb-4">
           <Code className="w-5 h-5 text-violet-400" />
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">
+          <h1 className="text-4xl font-bold lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">
             Rohit Manohar
           </h1>
           <Sparkles className="w-5 h-5 text-violet-400" />

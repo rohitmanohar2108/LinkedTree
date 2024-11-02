@@ -17,14 +17,14 @@ export function LinkCard({ title, description, url, icon, delay }: LinkCardProps
       target="_blank"
       rel="noopener noreferrer"
       className="group relative block w-full glass-card rounded-xl p-4 transition-all duration-300
-        hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg border "
+        hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg border"
       style={{ animationDelay: `${delay}s` }}
     >
       {/* Horizontal sweeping line effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 
         scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left" />
 
-      <div className="flex items-start space-x-4 relative z-10 ">
+      <div className="flex items-start space-x-4 relative z-10">
         <div className="p-2 rounded-lg bg-violet-500/20 text-violet-400
           group-hover:bg-violet-500/30 transition-colors duration-300">
           {icon}
