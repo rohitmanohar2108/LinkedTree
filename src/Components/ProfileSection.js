@@ -64,7 +64,7 @@ export function ProfileSection() {
         <div>
           <button
             onClick={scrollToCards}
-            className="absolute bottom left-1/2 -translate-x-1/2 text-purple-400 hover:text-purple-300 transition-colors touch-highlight z-20 mt-4"
+            className="absolute bottom left-1/2 -translate-x-1/2 text-purple-400 hover:text-purple-300 transition-colors touch-highlight z-20 mt-4 lg:hidden"
             aria-label="Scroll to skills"
           >
             <ChevronDown className="w-8 h-8 animate-bounce" />
