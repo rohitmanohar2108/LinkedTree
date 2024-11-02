@@ -21,7 +21,7 @@ export function ProfileSection() {
   return (
     <div className="w-full flex flex-col items-center">
       {/* Profile Image positioned above the pentagon */}
-      <div className="relative mb-8 z-10">
+      <div className="relative mb-4 z-10">
         <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-violet-500 shadow-lg">
           <img
             src="./rohit.jpg"
@@ -64,14 +64,14 @@ export function ProfileSection() {
         <div>
           <button
             onClick={scrollToCards}
-            className="absolute bottom left-1/2 -translate-x-1/2 text-purple-400 hover:text-purple-300 transition-colors touch-highlight z-20 mt-2"
+            className="absolute bottom left-1/2 -translate-x-1/2 text-purple-400 hover:text-purple-300 transition-colors touch-highlight z-20 mt-4"
             aria-label="Scroll to skills"
           >
             <ChevronDown className="w-8 h-8 animate-bounce" />
           </button>
         </div>
         <motion.div className="w-full flex justify-center mt-8">
-          <Lottie options={defaultOptions} height={300} width={300} />
+          <Lottie options={defaultOptions} height={400} width={400} />
         </motion.div>
       </div>
     </div>
