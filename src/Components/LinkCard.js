@@ -16,8 +16,8 @@ export function LinkCard({ title, description, url, icon, delay }: LinkCardProps
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block w-full glass-card rounded-xl p-4 transition-all duration-300
-        hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg border"
+      className="group relative block w-full rounded-xl p-4 transition-all duration-300 bg-gradient-to-tl from-purple-950/50 to-black/50
+        hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg border border-white/20"
       style={{ animationDelay: `${delay}s` }}
     >
       {/* Horizontal sweeping line effect */}

@@ -200,3 +200,47 @@
   .glass-card:hover {
     background: rgba(255, 255, 255, 0.05);
   }
+
+
+
+
+
+
+  @layer utilities {
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+  
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+
+  
+  
+    }
+    .side-float-animation {
+      animation: sideFloat 7s ease-in-out infinite;
+    }
+  
+    @keyframes sideFloat {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(20px); /* Move to the right */
+      }
+      50% {
+        transform: translateX(0); /* Return to the center */
+      }
+      75% {
+        transform: translateX(-20px); /* Move to the left */
+      }
+      100% {
+        transform: translateX(0); /* Return to the center */
+      }
+    }
+  }
