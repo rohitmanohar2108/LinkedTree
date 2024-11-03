@@ -21,7 +21,7 @@ export function ProfileSection() {
   return (
     <div className="w-full flex flex-col items-center relative group">
       {/* Profile Image with Background Gradient Glow */}
-      <div className="absolute  bg-gradient-to-tl from-purple-950/50 to-black/50 rounded-full lg:px-44 lg:py-28 px-48 py-[29%] border border-white/30 "></div>
+      <div className="absolute  bg-gradient-to-tl from-purple-950/50 to-black/50 rounded-full lg:px-44 lg:py-28 px-48 py-[35%] border border-white/30 "></div>
       <div className="relative mb-4 z-10 mt-4 side-float-animation">
         <div className="absolute inset-0 bg-gradient-to-r from-violet-600/50 to-fuchsia-600/50 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-500 "></div>
         <div className="relative rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-violet-500 shadow-lg bg-gradient-to-br from-white/10 to-white/5 p-1 backdrop-blur-sm">
