@@ -32,7 +32,6 @@ export function ProfileSection() {
           />
         </div>
       </div>
-      
 
       {/* Profile Content */}
       <div className="text-center z-20 mt-8">
