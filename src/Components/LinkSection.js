@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, X, Mail, Code, Briefcase } from 'lucide-react';
+import { Github, Linkedin, X, Mail, Code, Briefcase, } from 'lucide-react';
 import { LinkCard } from './LinkCard';
 
 export function LinkSection() {
