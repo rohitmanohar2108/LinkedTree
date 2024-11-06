@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github, Linkedin, X, Mail, Code, Briefcase, } from 'lucide-react';
 import { LinkCard } from './LinkCard';
 
 export function LinkSection() {
@@ -8,37 +7,37 @@ export function LinkSection() {
       title: 'Portfolio',
       description: 'A showcase of my work and personal projects',
       url: 'https://here-one.vercel.app/',
-      icon: <Briefcase className="w-5 h-5" />,
+      icon: <img src="/portfolio.png" alt="Portfolio Icon" className="w-9 h-9" />,
     },
     {
       title: 'GitHub',
       description: 'Browse my code repositories and contributions',
       url: 'https://github.com/rohitmanohar2108',
-      icon: <Github className="w-5 h-5" />,
+      icon: <img src="/github.png" alt="GitHub Icon" className="w-9 h-9" />,
     },
     {
       title: 'LinkedIn',
       description: 'View my professional background and connect with me',
       url: 'https://www.linkedin.com/in/rohit-manohar-80b949207/',
-      icon: <Linkedin className="w-5 h-5" />,
+      icon: <img src="/linkedin.png" alt="LinkedIn Icon" className="w-9 h-9" />,
     },
     {
       title: 'Twitter',
       description: 'Follow me for updates on tech and development',
-      url: 'https://dev.to',
-      icon: <X className="w-5 h-5" />,
+      url: 'https://twitter.com/yourusername',
+      icon: <img src="/twitter.png" alt="Twitter Icon" className="w-9 h-9" />,
     },
     {
       title: 'Latest Projects',
       description: 'Explore my recent cloud-native and software projects',
       url: 'https://github.com/yourusername/cloud-projects',
-      icon: <Code className="w-5 h-5" />,
+      icon: <img src="/project.png" alt="Projects Icon" className="w-9 h-9" />,
     },
     {
       title: 'Contact Me',
       description: 'Reach out for collaboration or inquiries',
       url: 'mailto:manoharrohit372@gmail.com',
-      icon: <Mail className="w-5 h-5" />,
+      icon: <img src="/gmail.png" alt="Mail Icon" className="w-9 h-9" />,
     }
   ];
 
