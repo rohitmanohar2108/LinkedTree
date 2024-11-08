@@ -53,7 +53,7 @@ export function ProfileSection() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mt-4 float-animation">
-          {["Computer Science","Frontend", "Web Design", "DSA"].map((tag) => (
+          {["Frontend", "Web Design", "DSA"].map((tag) => (
             <span
               key={tag}
               className="px-4 py-1.5 rounded-full glass-effect text-sm font-medium text-violet-300
