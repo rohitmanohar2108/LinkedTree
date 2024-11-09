@@ -21,7 +21,7 @@ export function Footer() {
                 Rohit Manohar
               </span>
             </div>
-            <p className="text-cyan-100/60 text-sm">*Develop *Design *Deploy</p>
+            <p className="text-cyan-100/60 text-sm">*Design *Develop *Deploy</p>
           </div>
 
           {/* Quick Links */}
