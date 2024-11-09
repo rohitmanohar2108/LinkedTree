@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ProfileSection } from "./Components/ProfileSection";
 import { LinkSection } from "./Components/LinkSection";
 import { BackgroundEffects } from "./Components/BackgroundEffects";
+import { Footer } from "./Components/Footer";
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <LinkSection />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
