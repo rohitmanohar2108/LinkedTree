@@ -46,8 +46,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-4 border-t border-cyan-500/20">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-8 pt-4 border-t border-cyan-500/20 lg:border-transparent">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 lg:ml-[45%]">
             <p className="text-cyan-100/40 text-sm">
               © {new Date().getFullYear()} Rohit Manohar.
             </p>
