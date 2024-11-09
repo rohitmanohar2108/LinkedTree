@@ -1,5 +1,11 @@
-import React from 'react';
-import { Github, Twitter, Linkedin, TreePine, ExternalLink } from 'lucide-react';
+import React from "react";
+import {
+  Github,
+  Twitter,
+  Linkedin,
+  TreePine,
+  ExternalLink,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,13 +17,11 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <TreePine className="h-6 w-6 text-cyan-400" />
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">
+              <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">
                 Rohit Manohar
               </span>
             </div>
-            <p className="text-cyan-100/60 text-sm">
-             *Develop *Design *Deploy
-            </p>
+            <p className="text-cyan-100/60 text-sm">*Develop *Design *Deploy</p>
           </div>
 
           {/* Quick Links */}
@@ -26,53 +30,19 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://docs.google.com/spreadsheets/d/1UMUPQptHICj3ihVFReS2aRGbY0fvTmyR9x2kmE6aHGs/edit?usp=drivesdk"
+                  href="https://example.com/explore"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-100/60 hover:text-fuchsia-400 transition-colors duration-300 text-sm flex items-center gap-1 group"
                 >
                   <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  Explore DSA sheet topic wise
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://example.com/documentation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-100/60 hover:text-fuchsia-400 transition-colors duration-300 text-sm flex items-center gap-1 group"
-                >
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://example.com/community"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-100/60 hover:text-fuchsia-400 transition-colors duration-300 text-sm flex items-center gap-1 group"
-                >
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  Community
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://example.com/about"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-100/60 hover:text-fuchsia-400 transition-colors duration-300 text-sm flex items-center gap-1 group"
-                >
-                  <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  About
+                  Coming....
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Social Links */}
-         
         </div>
 
         {/* Bottom Bar */}
@@ -81,7 +51,6 @@ export function Footer() {
             <p className="text-cyan-100/40 text-sm">
               © {new Date().getFullYear()} Rohit Manohar.
             </p>
-            
           </div>
         </div>
       </div>
