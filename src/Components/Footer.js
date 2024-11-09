@@ -21,7 +21,12 @@ export function Footer() {
                 Rohit Manohar
               </span>
             </div>
-            <p className="text-cyan-100/60 text-sm">*Design *Develop *Deploy</p>
+            <p className="text-cyan-100/60 text-sm">
+              {" "}
+              <span className="text-fuchsia-400 mt-1">•</span>Design{" "}
+              <span className="text-fuchsia-400 mt-1">•</span>Develop{" "}
+              <span className="text-fuchsia-400 mt-1">•</span>Deploy
+            </p>
           </div>
 
           {/* Quick Links */}
