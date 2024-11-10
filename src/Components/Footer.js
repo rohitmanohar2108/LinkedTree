@@ -6,7 +6,6 @@ import {
   TreePine,
   ExternalLink,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -34,14 +33,16 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-cyan-400 font-semibold">Quick Links</h3>
             <ul className="space-y-2">
-            <li>
-                <Link
-                  to="/web-development"
+              <li>
+                <a
+                  href="https://example.com/explore"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-cyan-100/60 hover:text-fuchsia-400 transition-colors duration-300 text-sm flex items-center gap-1 group"
                 >
                   <ExternalLink className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  Web Development
-                </Link>
+                  Coming....
+                </a>
               </li>
             </ul>
           </div>
