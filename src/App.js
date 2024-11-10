@@ -16,9 +16,10 @@ function App() {
 
 function MainContent() {
   const location = useLocation();
+  const isWebDevelopmentPage = location.pathname === "/web-development";
 
   return (
-    <div className="min-h-screen split-bg-gradient text-white overflow-hidden">
+    <div className={`min-h-screen split-bg-gradient text-white overflow-hidden ${isWebDevelopmentPage ? 'flex justify-center items-center' : ''}`}>
       <BackgroundEffects />
 
       <Routes>
@@ -42,8 +43,8 @@ function MainContent() {
         />
       </Routes>
 
-      {/* Conditionally render Footer */}
-      {location.pathname !== "/web-development" && <Footer />}
+      {/* Conditionally render Footer only if not on Web Development page */}
+      {!isWebDevelopmentPage && <Footer />}
     </div>
   );
 }
